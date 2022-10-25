@@ -24,7 +24,7 @@ export class AuthController {
   ) {}
 
   /**
-   * user sign up
+   * user registration
    * @param registerUserDto
    */
   @IsPublic()

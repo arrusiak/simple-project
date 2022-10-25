@@ -71,7 +71,8 @@ export class AuthService {
     };
     const accessToken = this._jwtService.sign(jwtPayload);
     if (!accessToken) throw new BadRequestException('Incorrect Credentials');
-    // user = user.toJSON();
+    user.password = undefined;
+    user = user.toJSON();
 
     return {
       authorized: true,

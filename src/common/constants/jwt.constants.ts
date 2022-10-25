@@ -1,4 +1,4 @@
 export const jwtConstants = {
   secret: 'm986f5@9ek-l',
-  expiresIn: '1d',
+  expiresIn: '1h',
 };
