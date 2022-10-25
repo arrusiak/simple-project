@@ -1,0 +1,37 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist",
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@common/*": ["common/*"],
+      "@config/*": ["config/*"],
+      "@enums/*": ["common/enums/*"],
+      "@interfaces/*": ["common/interfaces/*"],
+      "@utils/*": ["common/utils/*"],
+      "@types/*": ["common/types/*"],
+      "@models": ["DAL/models"],
+      "@currentUser": ["common/decorators/current-user.decorator"],
+      "@userRoles": ["common/decorators/roles.decorator"]
+    }
+  }
+}
